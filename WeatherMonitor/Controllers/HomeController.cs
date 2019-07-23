@@ -13,22 +13,9 @@ namespace WeatherMonitor.Controllers
     {
         public IActionResult Index()
         {
-            return View(new HomeViewModel());
-        }
-
-        public IActionResult About()
-        {
-            Random r = new Random();
-            int delay = r.Next(5000, 10000);
-            Thread.Sleep(delay);
             return View();
         }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
